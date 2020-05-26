@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Yia8Yw1dpRaPrcoKYFfJTW1Vwt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../Server/TestServer/plugins" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunManager" selected="Remote.Debug Spigot">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="EssentialsZR" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EssentialsZR build" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug Spigot" type="Remote">
+      <module name="EssentialsZR" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.main" />
+      <item itemvalue="Maven.EssentialsZR build" />
+      <item itemvalue="Maven.Unnamed" />
+      <item itemvalue="Remote.Debug Spigot" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Maven.Unnamed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="" />
+      <created>1583427709599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583427709599</updated>
+      <workItem from="1583427711035" duration="448000" />
+      <workItem from="1588365058082" duration="3847000" />
+      <workItem from="1588379976584" duration="2933000" />
+      <workItem from="1588386937457" duration="4979000" />
+      <workItem from="1588470590023" duration="641000" />
+      <workItem from="1588520726498" duration="2032000" />
+      <workItem from="1588535045640" duration="1245000" />
+      <workItem from="1588550300304" duration="4155000" />
+      <workItem from="1588556230696" duration="170000" />
+      <workItem from="1588632888200" duration="10000" />
+      <workItem from="1588678638995" duration="206000" />
+      <workItem from="1588678846816" duration="1000" />
+      <workItem from="1588678865403" duration="380000" />
+      <workItem from="1588812902382" duration="1776000" />
+      <workItem from="1588869433934" duration="364000" />
+      <workItem from="1588991817194" duration="5000" />
+      <workItem from="1589126900517" duration="1913000" />
+      <workItem from="1589132219063" duration="3391000" />
+      <workItem from="1589146209790" duration="2479000" />
+      <workItem from="1589153277035" duration="1645000" />
+      <workItem from="1589163226754" duration="3274000" />
+      <workItem from="1589226873309" duration="23000" />
+      <workItem from="1589239331634" duration="1527000" />
+      <workItem from="1589281378579" duration="29000" />
+      <workItem from="1589326562225" duration="5015000" />
+      <workItem from="1589392811543" duration="58000" />
+      <workItem from="1589397977881" duration="8000" />
+      <workItem from="1589483592534" duration="287000" />
+      <workItem from="1589599098732" duration="2436000" />
+      <workItem from="1589689950560" duration="17000" />
+      <workItem from="1589756738987" duration="2247000" />
+      <workItem from="1589764112589" duration="7592000" />
+      <workItem from="1589805818225" duration="4478000" />
+      <workItem from="1589817697784" duration="2133000" />
+      <workItem from="1589825258183" duration="2129000" />
+      <workItem from="1589837927832" duration="4762000" />
+      <workItem from="1589847836268" duration="3953000" />
+      <workItem from="1589862572599" duration="909000" />
+      <workItem from="1589921926705" duration="4000" />
+      <workItem from="1589922391843" duration="5868000" />
+      <workItem from="1589944943744" duration="3000" />
+      <workItem from="1590013562801" duration="14233000" />
+      <workItem from="1590072450091" duration="1030000" />
+      <workItem from="1590087285739" duration="313000" />
+      <workItem from="1590155351619" duration="5552000" />
+      <workItem from="1590362903743" duration="5967000" />
+      <workItem from="1590454558269" duration="49000" />
+      <workItem from="1590492022213" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1589328843287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588380044464" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589328843287" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588554872578">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588554872578" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1589838710120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589838710120" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590364413113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590364413113" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589808777197">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589808777197" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588554602513">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588554602513" />
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1590372347974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1590372347974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1590372347974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1590372347974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom" timestamp="1590372347975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
+    <state width="1877" height="291" key="GridCell.Tab.1.center" timestamp="1590372347975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
+    <state width="1877" height="291" key="GridCell.Tab.1.left" timestamp="1590372347974">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right" timestamp="1590372347975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
+    <state x="441" y="162" width="998" height="708" key="SettingsEditor" timestamp="1589240279473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="441" y="162" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588371284802" />
+    <state x="441" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589240279473" />
+    <state x="1038" y="265" key="extract.method.dialog" timestamp="1589808421902">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1038" y="265" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589808421902" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1589768813447">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589768813447" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1589808159283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589808159283" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Commands/Money.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Time.java</url>
+          <line>22</line>
+          <properties class="me.zortex.free.Commands.Time" method="onCommand">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Teleport.java</url>
+          <line>20</line>
+          <properties class="me.zortex.free.Commands.Teleport" method="onCommand">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java</url>
+          <line>26</line>
+          <properties class="me.zortex.free.Commands.Spawn" method="onCommand">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="this.inventory" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

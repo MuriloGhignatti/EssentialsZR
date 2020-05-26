@@ -1,0 +1,32 @@
+name: EssentialsZR
+version: 1.0
+main: me.zortex.free.EssentialsZR
+api-version: "1.13"
+authors: [Z0rtex]
+description: Essentials commands and events for any minecraft server
+loadbefore:
+  - EZRanksPro
+  - ChestShop
+softdepend:
+  - Vault
+commands:
+  setspawn:
+    description: Set the spawn location
+  spawn:
+    description: Go to the Spawn
+  ezreload:
+    description: Reloads the plugin
+  gm:
+    description: Change the Player Gamemode
+  time:
+    description: See or Change the Time
+  setrain:
+    description: Set The Rain to On or Off
+  invsee:
+    description: See the inventory of other Player
+  money:
+    description: Sees Money
+  tp:
+    description: Teleport to a player
+    aliases:
+      - teleport
