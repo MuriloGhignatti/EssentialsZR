@@ -76,7 +76,7 @@ public class Spawn implements CommandExecutor {
             }
         } else if (args.length == 2) {
             if (sender.hasPermission("essentialszr.spawn.others")) {
-                if (sender.hasPermission("essentials.spawns." + args[1])) {
+                if (sender.hasPermission("essentialszr.spawns." + args[1])) {
                     if (Bukkit.getPlayer(args[0]) != null) {
                         if (spawnConfig.get().getLocation("Spawns." + args[1]) != null) {
                             Player player = Bukkit.getPlayer(args[0]);
