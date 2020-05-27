@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="" />
+    <list default="true" id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/EssentialsZR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/EssentialsZR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/EssentialsZR-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/EssentialsZR-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Spawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Spawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/EssentialsZR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/EssentialsZR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-EssentialsZR-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-EssentialsZR-1.0.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +46,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,6 +58,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Yia8Yw1dpRaPrcoKYFfJTW1Vwt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -190,11 +226,29 @@
       <workItem from="1590362903743" duration="5967000" />
       <workItem from="1590454558269" duration="49000" />
       <workItem from="1590492022213" duration="3000" />
+      <workItem from="1590498220183" duration="1136000" />
+      <workItem from="1590528801997" duration="260000" />
+      <workItem from="1590594914227" duration="706000" />
+      <workItem from="1590601226658" duration="126000" />
+      <workItem from="1590601470027" duration="848000" />
+      <workItem from="1590606373737" duration="782000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="94" key="#Project_Structure" timestamp="1589328843287">
@@ -222,46 +276,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588554602513" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1590372347974">
+    <state x="833" y="418" width="292" height="204" key="Github.ShareDialog" timestamp="1590498619638">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="418" width="292" height="204" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590498619638" />
+    <state x="678" y="192" key="Github.UntrackedFilesDialog" timestamp="1590498755479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="678" y="192" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590498755479" />
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1590372347974">
+    <state width="1877" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.0.center" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1590372347974">
+    <state width="1877" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.0.left" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1590372347974">
+    <state width="1877" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.0.right" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
-    <state width="1877" height="291" key="GridCell.Tab.1.bottom" timestamp="1590372347975">
+    <state width="1877" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
-    <state width="1877" height="291" key="GridCell.Tab.1.center" timestamp="1590372347975">
+    <state width="1877" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.1.center" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
-    <state width="1877" height="291" key="GridCell.Tab.1.left" timestamp="1590372347974">
+    <state width="1877" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.1.left" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347974" />
-    <state width="1877" height="291" key="GridCell.Tab.1.right" timestamp="1590372347975">
+    <state width="1877" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right" timestamp="1590602318418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590372347975" />
+    <state width="1877" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590602318418" />
     <state x="441" y="162" width="998" height="708" key="SettingsEditor" timestamp="1589240279473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -275,6 +337,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589768813447" />
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1590498510618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590498510618" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1589808159283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -303,14 +369,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java</url>
-          <line>26</line>
-          <properties class="me.zortex.free.Commands.Spawn" method="onCommand">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,10 +9,6 @@ import org.bukkit.entity.Player;
 import me.zortex.free.Files.Messages;
 import me.zortex.free.Files.SpawnConfig;
 
-/*
-- TODO Implemente Permission essentialszr.spawn, essentialszr.spawn.{custom} and essentialszr.spawn.others
-*/
-
 public class Spawn implements CommandExecutor {
 
     private final SpawnConfig spawnConfig;
@@ -48,45 +44,64 @@ public class Spawn implements CommandExecutor {
                         return false;
                     } else {
                         if (spawnConfig.get().getLocation("Spawns." + args[0]) != null) {
-                            Player player = (Player) sender;
-                            player.teleport(spawnConfig.get().getLocation("Spawns." + args[0]));
-                            player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn").replace("{spawnName}", args[0]));
-                            return true;
+                            if (sender.hasPermission("essentialszr.spawns." + args[0])) {
+                                Player player = (Player) sender;
+                                player.teleport(spawnConfig.get().getLocation("Spawns." + args[0]));
+                                player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn").replace("{spawnName}", args[0]));
+                                return true;
+                            } else {
+                                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[0]));
+                                return false;
+                            }
                         } else {
                             sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn Not Found").replace('&', '§').replace("{spawnName}", args[0]));
                             return false;
                         }
                     }
                 } else {
-                    Player player = Bukkit.getPlayer(args[0]);
-                    player.teleport(spawnConfig.get().getLocation("Spawns.Default"));
-                    player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", player.getDisplayName()));
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
-                    return true;
+                    if (sender.hasPermission("essentialszr.spawn.others")) {
+                        Player player = Bukkit.getPlayer(args[0]);
+                        player.teleport(spawnConfig.get().getLocation("Spawns.Default"));
+                        player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", player.getDisplayName()));
+                        sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
+                        return true;
+                    } else {
+                        sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawn.others"));
+                        return false;
+                    }
                 }
             } else {
                 sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawn"));
                 return false;
             }
         } else if (args.length == 2) {
-            if(Bukkit.getPlayer(args[0]) != null) {
-                if(spawnConfig.get().getLocation("Spawns." + args[1]) != null){
-                    Player player = Bukkit.getPlayer(args[0]);
-                    player.teleport(spawnConfig.get().getLocation("Spawns." + args[1]));
-                    player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", sender.getName()));
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
-                    return true;
+            if (sender.hasPermission("essentialszr.spawn.others")) {
+                if (sender.hasPermission("essentials.spawns." + args[1])) {
+                    if (Bukkit.getPlayer(args[0]) != null) {
+                        if (spawnConfig.get().getLocation("Spawns." + args[1]) != null) {
+                            Player player = Bukkit.getPlayer(args[0]);
+                            player.teleport(spawnConfig.get().getLocation("Spawns." + args[1]));
+                            player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", sender.getName()));
+                            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
+                            return true;
+                        } else {
+                            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn Not Found").replace('&', '§').replace("{spawnName}", args[0]));
+                            return false;
+                        }
+                    } else {
+                        sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Player Not Online").replace("{player}", args[0]));
+                        return false;
+                    }
                 } else {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn Not Found").replace('&', '§').replace("{spawnName}", args[0]));
+                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[1]));
                     return false;
                 }
-            } else{
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Player Not Online").replace("{player}",args[0]));
+            } else {
+                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawn.others"));
                 return false;
             }
-        }
-        else{
-            sender.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Error").replace('&','§'));
+        } else {
+            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Error").replace('&', '§'));
             return false;
         }
     }

@@ -5,7 +5,6 @@ import me.zortex.free.Economy.Currency;
 import me.zortex.free.Economy.Events.PlayerJoing;
 import me.zortex.free.Events.SignColors;
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.java.JavaPlugin;
 
