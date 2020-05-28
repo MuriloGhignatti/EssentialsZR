@@ -16,13 +16,16 @@ public class EZReload implements CommandExecutor {
         this.messages = messages;
     }
 
-    //TODO Implement permission essentialszr.reload
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        spawnConfig.reload();
-        messages.reload();
-        sender.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Reload").replace('&','§'));
-        return true;
+        if(sender.hasPermission("essentialszr.reload") || sender.hasPermission("essentialszr.*")) {
+            spawnConfig.reload();
+            messages.reload();
+            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Reload").replace('&', '§'));
+            return true;
+        } else{
+            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.reload"));
+            return false;
+        }
     }
 }

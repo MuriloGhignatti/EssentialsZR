@@ -12,29 +12,33 @@ import me.zortex.free.Files.Messages;
 
 public class Invsee implements CommandExecutor, Listener {
 
-    private final Messages msg;
+    private final Messages messages;
 
-    public Invsee(Messages msg) {
-        this.msg = msg;
+    public Invsee(Messages messages) {
+        this.messages = messages;
     }
-
-    //TODO Implemente permission essentialszr.invsee
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
-            sender.sendMessage(msg.get().getString("General.Prefix").replace('&','§') + ' ' + msg.get().getString("General.Only Player Command").replace('&', '§'));
+            sender.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Only Player Command").replace('&', '§'));
             return false;
         }
-        Player commandExecuter = (Player) sender;
-        if (args.length != 1) {
-            commandExecuter.sendMessage(msg.get().getString("General.Prefix").replace('&','§') + ' ' + msg.get().getString("Invsee.Player Error").replace('&', '§'));
+        else if(sender.hasPermission("essentialszr.invsee") || sender.hasPermission("essentialszr.*")){
+            Player commandExecuter = (Player) sender;
+            if (args.length != 1) {
+                commandExecuter.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("Invsee.Player Error").replace('&', '§'));
+                return false;
+            }
+
+            if(Bukkit.getPlayer(args[0]) != null) commandExecuter.openInventory(Bukkit.getPlayer(args[0]).getInventory());
+            else commandExecuter.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Player Not Online").replace('&','§').replace("{player}",args[0]));
+
+            return true;
+        }
+        else{
+            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.invsee"));
             return false;
         }
-
-        if(Bukkit.getPlayer(args[0]) != null) commandExecuter.openInventory(Bukkit.getPlayer(args[0]).getInventory());
-        else commandExecuter.sendMessage(msg.get().getString("General.Prefix").replace('&','§') + ' ' + msg.get().getString("General.Player Not Online").replace('&','§').replace("{player}",args[0]));
-
-        return true;
     }
 }

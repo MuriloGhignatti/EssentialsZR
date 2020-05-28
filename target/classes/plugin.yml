@@ -20,7 +20,7 @@ commands:
     description: Change the Player Gamemode
   time:
     description: See or Change the Time
-  setrain:
+  weather:
     description: Set The Rain to On or Off
   invsee:
     description: See the inventory of other Player

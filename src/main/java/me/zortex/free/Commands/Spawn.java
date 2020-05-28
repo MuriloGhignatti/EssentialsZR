@@ -28,7 +28,7 @@ public class Spawn implements CommandExecutor {
             } else {
                 if (sender.hasPermission("essentialszr.spawn") || sender.hasPermission("essentialszr.*")) {
                     Player player = (Player) sender;
-                    player.teleport(spawnConfig.get().getLocation("Spawns.Default"));
+                    player.teleport(spawnConfig.get().getLocation("Spawns.default"));
                     player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn").replace('&', '§').replace("{spawnName}", messages.get().getString("Spawn.Default Spawn Name").replace('&', '§')));
                     return true;
                 } else {
@@ -44,13 +44,13 @@ public class Spawn implements CommandExecutor {
                         return false;
                     } else {
                         if (spawnConfig.get().getLocation("Spawns." + args[0]) != null) {
-                            if (sender.hasPermission("essentialszr.spawns." + args[0])) {
+                            if (sender.hasPermission("essentialszr.spawns." + args[0].toLowerCase())) {
                                 Player player = (Player) sender;
-                                player.teleport(spawnConfig.get().getLocation("Spawns." + args[0]));
+                                player.teleport(spawnConfig.get().getLocation("Spawns." + args[0].toLowerCase()));
                                 player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.Spawn").replace("{spawnName}", args[0]));
                                 return true;
                             } else {
-                                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[0]));
+                                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[0].toLowerCase()));
                                 return false;
                             }
                         } else {
@@ -61,7 +61,7 @@ public class Spawn implements CommandExecutor {
                 } else {
                     if (sender.hasPermission("essentialszr.spawn.others")) {
                         Player player = Bukkit.getPlayer(args[0]);
-                        player.teleport(spawnConfig.get().getLocation("Spawns.Default"));
+                        player.teleport(spawnConfig.get().getLocation("Spawns.default"));
                         player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", player.getDisplayName()));
                         sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
                         return true;
@@ -76,11 +76,11 @@ public class Spawn implements CommandExecutor {
             }
         } else if (args.length == 2) {
             if (sender.hasPermission("essentialszr.spawn.others")) {
-                if (sender.hasPermission("essentialszr.spawns." + args[1])) {
+                if (sender.hasPermission("essentialszr.spawns." + args[1].toLowerCase())) {
                     if (Bukkit.getPlayer(args[0]) != null) {
                         if (spawnConfig.get().getLocation("Spawns." + args[1]) != null) {
                             Player player = Bukkit.getPlayer(args[0]);
-                            player.teleport(spawnConfig.get().getLocation("Spawns." + args[1]));
+                            player.teleport(spawnConfig.get().getLocation("Spawns." + args[1].toLowerCase()));
                             player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportPlayerToSpawn").replace('&', '§').replace("{commandExecuter}", sender.getName()));
                             sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.teleportedToSpawn").replace('&', '§').replace("{player}", player.getDisplayName()));
                             return true;
@@ -93,7 +93,7 @@ public class Spawn implements CommandExecutor {
                         return false;
                     }
                 } else {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[1]));
+                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.spawns." + args[1].toLowerCase()));
                     return false;
                 }
             } else {

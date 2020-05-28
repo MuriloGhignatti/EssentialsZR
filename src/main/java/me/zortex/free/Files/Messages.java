@@ -40,22 +40,24 @@ public class Messages extends ConfigManager{
         super.get().addDefault("GM.Player Current Gamemode", "{player} Current Gamemode Is: {gamemode}");
         super.get().addDefault("GM.Self Gamemode Set", "Gamemode Set To {gamemode}");
         super.get().addDefault("GM.Others Gamemode Set", "{setter} Set Your Gamemode To {gamemode}");
+        super.get().addDefault("GM.Set Others Gamemode Set", "{player} New Gamemode Is: {gamemode}");
         super.get().addDefault("GM.Error Message", "The Target Player Was Not Found. Check Player name and if The Player is Online");
         super.get().addDefault("GM.Wrong Parameter", "Parameter '{parameter}' is wrong! /help to get command info");
+        super.get().addDefault("GM.Low Arguments", "Check if you input the player name and/or a Gamemode");
 
         super.get().addDefault("Invsee", null);
         super.get().addDefault("Invsee.Player Error", "Check if you have only the player name you desire to see the inventory");
 
         super.get().addDefault("Rain", null);
-        super.get().addDefault("Rain.On", "Rain Turned &aOn");
-        super.get().addDefault("Rain.Off", "Rain Turned &cOff");
+        super.get().addDefault("Rain.On", "Rain Turned &cStorm");
+        super.get().addDefault("Rain.Off", "Rain Turned &aClear");
         super.get().addDefault("Rain.Error", "Make Shure You Inputed If Rain Is On/Off and Wich World You Want To Set It");
 
         super.get().addDefault("Spawn", null);
         super.get().addDefault("Spawn.Default Spawn Name", "Spawn");
         super.get().addDefault("Spawn.Spawn Not Found", "No Spawn With Name \"{spawnName}\"");
         super.get().addDefault("Spawn.Low Arguments", "Check if you inputed player name and/or spawn name");
-        super.get().addDefault("Spawn.SetSpawn", "Spawn Set");
+        super.get().addDefault("Spawn.SetSpawn", "{spawnName} Set To You Current Location");
         super.get().addDefault("Spawn.Spawn", "Welcome to {spawnName} Spawn!");
         super.get().addDefault("Spawn.teleportedToSpawn", "{player} was sucessfuly teleported to Spawn");
         super.get().addDefault("Spawn.teleportPlayerToSpawn","{commandExecuter} teleported you to spawn!");

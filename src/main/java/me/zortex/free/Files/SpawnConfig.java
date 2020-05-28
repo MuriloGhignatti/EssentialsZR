@@ -3,11 +3,6 @@ package me.zortex.free.Files;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 
-/*
-TODO - Implement /spawn {spawnName}
-TODO - Implement /spawn {spawnName} {player}
-*/
-
 public class SpawnConfig extends ConfigManager{
 
 
@@ -19,7 +14,7 @@ public class SpawnConfig extends ConfigManager{
     @Override
     public void generateDefaults() {
         super.get().addDefault("Spawns",null);
-        super.get().addDefault("Spawns.Default", Bukkit.getServer().getWorld("world").getSpawnLocation());
+        super.get().addDefault("Spawns.default", Bukkit.getServer().getWorld("world").getSpawnLocation());
         super.get().options().copyDefaults(true);
         super.save();
 

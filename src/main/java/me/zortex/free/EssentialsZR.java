@@ -42,7 +42,7 @@ public final class EssentialsZR extends JavaPlugin {
         this.getCommand("ezreload").setExecutor(new EZReload(spawnConfig,messages));
         this.getCommand("gm").setExecutor(new Gm(messages));
         this.getCommand("time").setExecutor(new Time(messages));
-        this.getCommand("setrain").setExecutor(new setrain(messages));
+        this.getCommand("weather").setExecutor(new Weather(messages));
         this.getCommand("invsee").setExecutor(new Invsee(messages));
         this.getCommand("tp").setExecutor(new Teleport(messages));
 
