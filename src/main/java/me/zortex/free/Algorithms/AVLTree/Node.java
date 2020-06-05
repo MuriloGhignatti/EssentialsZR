@@ -1,6 +1,7 @@
 package me.zortex.free.Algorithms;
 
-public class Node<T>{
+public abstract class Node<T>{
+
     private Node<T> left;
     private Node<T> right;
     private T info;
@@ -15,11 +16,6 @@ public class Node<T>{
         this.info = info;
         this.left = left;
         this.right = right;
-    }
-    public Node(T info, T infoLeft, T infoRight){
-        this.info = info;
-        this.left = new Node<T>(infoLeft);
-        this.right = new Node<T>(infoRight);
     }
 
     public void setInfo(T info){
@@ -49,19 +45,7 @@ public class Node<T>{
         if(this.info != null )return this.info;
         return null;
     }
-    public double getBalance() {
-        return balance;
-    }
-
-    public double withdraw(double amount){
-        return this.balance -= amount;
-    }
-    public double deposit(double amount){
-        return this.balance += amount;
-    }
-
     public void printInfo(){
         System.out.println(info);
     }
-
 }
