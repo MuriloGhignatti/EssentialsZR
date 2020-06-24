@@ -1,20 +1,22 @@
-package me.zortex.free.Algorithms;
+package me.zortex.free.Economy.Tree;
 
-public class Node extends Node_Abstract<String>{
+import me.zortex.free.Algorithms.AVLTree.Node;
+
+public class EconomyNode extends Node<String> {
 
     double balance;
 
-    public Node(String info, double balance){
+    public EconomyNode(String info, double balance){
         super(info);
         this.balance = balance;
     }
 
-    public Node(String info){
+    public EconomyNode(String info){
         super(info);
         this.balance = 0;
     }
 
-    public Node(String info, Node left, Node right,double balance){
+    public EconomyNode(String info, EconomyNode left, EconomyNode right, double balance){
         super(info,left,right);
         this.balance = balance;
     }

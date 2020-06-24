@@ -22,7 +22,7 @@ public class SetSpawn implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if(sender instanceof ConsoleCommandSender){
-            sender.sendMessage(messages.get().getString("General.Prefix").replace('&','§') + ' ' + messages.get().getString("General.Only Player Command").replace('&','§'));
+            sender.sendMessage(messages.getMessage("General.Only Player Command"));
             return false;
         }
         else if(args.length == 0){
@@ -31,11 +31,11 @@ public class SetSpawn implements CommandExecutor {
                 player.getWorld().setSpawnLocation(player.getLocation());
                 spawnConfig.get().set("Spawns.default", player.getLocation());
                 spawnConfig.save();
-                player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.SetSpawn").replace('&', '§').replace("{spawnName}", "Default"));
+                player.sendMessage(messages.getMessage("Spawn.SetSpawn").replace("{spawnName}", "Default"));
                 return true;
             }
             else{
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.setspawn.default"));
+                sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.setspawn.default"));
                 return false;
             }
         }
@@ -45,11 +45,11 @@ public class SetSpawn implements CommandExecutor {
                 player.getWorld().setSpawnLocation(player.getLocation());
                 spawnConfig.get().set("Spawns." + args[0].toLowerCase(), player.getLocation());
                 spawnConfig.save();
-                player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Spawn.SetSpawn").replace('&', '§').replace("{spawnName}", args[0]));
+                player.sendMessage(messages.getMessage("Spawn.SetSpawn").replace("{spawnName}", args[0]));
                 return true;
             }
             else{
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.setspawn.multiple"));
+                sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.setspawn.multiple"));
                 return false;
             }
         }

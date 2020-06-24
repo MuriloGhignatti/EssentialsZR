@@ -1,19 +1,23 @@
-package me.zortex.free.Algorithms;
+package me.zortex.free.Algorithms.AVLTree;
 
 public abstract class Node<T>{
 
     private Node<T> left;
     private Node<T> right;
     private T info;
-    private double balance;
 
     public Node(T info){
         this.info = info;
         this.left = null;
         this.right = null;
     }
-    public Node(T info, Node<T> left, Node<T> right){
+    public Node(T info ,Node<T> left, Node<T> right){
         this.info = info;
+        this.left = left;
+        this.right = right;
+    }
+
+    public Node(Node<T> left, Node<T> right){
         this.left = left;
         this.right = right;
     }
@@ -26,9 +30,6 @@ public abstract class Node<T>{
     }
     public void setLeft(Node<T> left){
         this.left = left;
-    }
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 
     public Node<T> getRight(){

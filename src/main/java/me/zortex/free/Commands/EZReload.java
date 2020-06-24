@@ -21,10 +21,10 @@ public class EZReload implements CommandExecutor {
         if(sender.hasPermission("essentialszr.reload") || sender.hasPermission("essentialszr.*")) {
             spawnConfig.reload();
             messages.reload();
-            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Reload").replace('&', '§'));
+            sender.sendMessage(messages.getMessage("General.Reload"));
             return true;
         } else{
-            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.reload"));
+            sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.reload"));
             return false;
         }
     }

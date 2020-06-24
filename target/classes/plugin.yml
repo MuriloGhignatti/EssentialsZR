@@ -26,7 +26,24 @@ commands:
     description: See the inventory of other Player
   money:
     description: Sees Money
+  balancetop:
+    description: Sees the Balance Top
+    aliases:
+      - baltop
+      - bt
+  pay:
+    description: Send Money to Some One
+    aliases:
+      - p
   tp:
     description: Teleport to a player
     aliases:
       - teleport
+  teleportrequest:
+    description: Request to teleport to a player
+    aliases:
+      - tpr
+  teleportaccept:
+    description: Accept a teleport request
+    aliases:
+      - tpa

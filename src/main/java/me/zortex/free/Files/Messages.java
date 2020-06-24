@@ -3,6 +3,8 @@ package me.zortex.free.Files;
 import org.bukkit.GameMode;
 import org.bukkit.configuration.file.FileConfiguration;
 
+import java.util.Objects;
+
 public class Messages extends ConfigManager{
 
     public Messages(String fileName){
@@ -29,6 +31,7 @@ public class Messages extends ConfigManager{
         super.get().addDefault("General.Player Not Online","\"{player}\" is not online or doesn't exist, please try again");
         super.get().addDefault("General.World Not Found", "World \"{worldname}\" was not found!");
         super.get().addDefault("General.Missing Permission", "Missing permission {permission}");
+        super.get().addDefault("General.Negative Value", "Wrong parameter usage, do not use negative amounts");
 
         super.get().addDefault("GM", null);
         super.get().addDefault("GM.Gamemodes", null);
@@ -80,6 +83,18 @@ public class Messages extends ConfigManager{
         super.get().addDefault("Teleport.Teleport Player to Teleport Receiver","{commandExecuter} teleported {player/coord} to you ");
         super.get().addDefault("Teleport.Teleport Player to Teleport Sender","You teleported {player1} to {player2/coord} with sucess");
 
+        super.get().addDefault("TeleportRequest",null);
+        super.get().addDefault("TeleportRequest.Requested","{player} requested to teleport to you, /tpa to accept");
+        super.get().addDefault("TeleportRequest.Requester","You requested to teleport to {player}");
+        super.get().addDefault("TeleportRequest.Accepted Delay","{player} accepted your teleport request, you will be teleporting in {s} seconds");
+        super.get().addDefault("TeleportRequest.Accepted","{player} accepted your teleport request");
+
+        super.get().addDefault("Economy",null);
+        super.get().addDefault("Economy.Money","You Have: {balance} {economyName}");
+        super.get().addDefault("Economy.Pay Sender","You Payed {amount} to {player}");
+        super.get().addDefault("Economy.Pay Receiver","{player} payed you {amount}");
+        super.get().addDefault("Economy.Not Enough Balance","You don't have the enough money to complete these transition");
+
         super.get().options().copyDefaults(true);
         super.save();
 
@@ -91,6 +106,10 @@ public class Messages extends ConfigManager{
 
     public void save(){
         super.save();
+    }
+
+    public String getMessage(String path){
+        return Objects.requireNonNull(super.get().getString("General.Prefix")).replace('&','§') + ' ' + Objects.requireNonNull(super.get().getString(path)).replace('&','§');
     }
 
     public void reload(){

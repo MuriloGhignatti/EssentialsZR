@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 
 import me.zortex.free.Files.Messages;
 
-import java.io.Console;
+import java.util.Objects;
 
 public class Time implements CommandExecutor {
 
@@ -24,59 +24,59 @@ public class Time implements CommandExecutor {
         if (args.length == 0) {
             if (sender.hasPermission("essentialszr.time.see") || sender.hasPermission("essentialszr.*")) {
                 if (sender instanceof ConsoleCommandSender) {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Low Arguments").replace('&', '§'));
+                    sender.sendMessage(messages.getMessage("Time.Low Arguments"));
                     return false;
                 }
                 Player player = (Player) sender;
-                player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Current").replace('&', '§').replace("{currentTime}", Long.toString(player.getWorld().getTime())));
+                player.sendMessage(messages.getMessage("Time.Current").replace("{currentTime}", Long.toString(player.getWorld().getTime())));
                 return true;
             } else {
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.time.see"));
+                sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.time.see"));
                 return false;
             }
         }
         else if (args.length == 1) {
             if (sender.hasPermission("essentialszr.time.see") || sender.hasPermission("essentialszr.*")) {
                 if (Bukkit.getWorlds().stream().anyMatch(world -> world.getName().equals(args[0]))) {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Current").replace('&', '§').replace("{currentTime}", Long.toString(Bukkit.getWorld(args[0]).getTime())));
+                    sender.sendMessage(messages.getMessage("Time.Current").replace("{currentTime}", Long.toString(Objects.requireNonNull(Bukkit.getWorld(args[0])).getTime())));
                     return true;
                 } else {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.World Not Found").replace('&', '§').replace("{worldname}", args[0]));
+                    sender.sendMessage(messages.getMessage("General.World Not Found").replace("{worldname}", args[0]));
                     return false;
                 }
             } else {
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.time.see"));
+                sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.time.see"));
                 return false;
             }
         }
         else if (args.length == 2) {
             if (sender.hasPermission("essentialszr.time.set") || sender.hasPermission("essentialszr.*")) {
                 if (sender instanceof ConsoleCommandSender) {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Low Arguments").replace('&', '§'));
+                    sender.sendMessage(messages.getMessage("Time.Low Arguments"));
                     return false;
                 } else if (args[0].toLowerCase().equals("set")) {
                     Player player = (Player) sender;
                     if (args[1].toLowerCase().equals("day")) {
                         player.getWorld().setTime(0);
-                        player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Day").replace('&', '§'));
+                        player.sendMessage(messages.getMessage("Time.Day"));
                         return true;
                     } else if (args[1].toLowerCase().equals("night")) {
                         player.getWorld().setTime(14000);
-                        player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Night").replace('&', '§'));
+                        player.sendMessage(messages.getMessage("Time.Night"));
                         return true;
                     } else {
                         try {
                             Integer.parseInt(args[1]);
                             player.getWorld().setTime(Long.parseLong(args[1]));
-                            player.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Custom Time").replace('&', '§').replace("{timeSet}", args[1]));
+                            player.sendMessage(messages.getMessage("Time.Custom Time").replace("{timeSet}", args[1]));
                             return true;
                         } catch (NumberFormatException e) {
-                            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Error").replace('&', '§'));
+                            sender.sendMessage(messages.getMessage("General.Error"));
                         }
                     }
                 } else return dayNight(sender, args);
             } else{
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.time.set"));
+                sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.time.set"));
                 return false;
             }
         } else {
@@ -84,41 +84,41 @@ public class Time implements CommandExecutor {
                 if (sender.hasPermission("essentialszr.time.set") || sender.hasPermission("essentialszr.*")) {
                     Long.parseLong(args[1]);
                     if (Bukkit.getWorlds().stream().anyMatch(world -> world.getName().equals(args[2]))) {
-                        Bukkit.getWorld(args[2]).setTime(Long.parseLong(args[1]));
-                        sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Night World").replace('&', '§').replace("{world}", args[2]));
+                        Objects.requireNonNull(Bukkit.getWorld(args[2])).setTime(Long.parseLong(args[1]));
+                        sender.sendMessage(messages.getMessage("Time.Night World").replace("{world}", args[2]));
                         return true;
                     }
                 } else {
-                    sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Missing Permission").replace('&', '§').replace("{permission}", "essentialszr.time.set"));
+                    sender.sendMessage(messages.getMessage("General.Missing Permission").replace("{permission}", "essentialszr.time.set"));
                     return false;
                 }
             } catch (NumberFormatException e) {
                 return dayNight(sender, args);
             }
-            sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Error").replace('&', '§'));
+            sender.sendMessage(messages.getMessage("General.Error"));
             return false;
         }
-        sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.Error").replace('&', '§'));
+        sender.sendMessage(messages.getMessage("General.Error"));
         return false;
     }
 
     private boolean dayNight(CommandSender sender, String[] args) {
         if (args[1].toLowerCase().equals("day")) {
             if (Bukkit.getWorlds().stream().anyMatch(world -> world.getName().equals(args[2]))) {
-                Bukkit.getWorld(args[2]).setTime(0);
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Day World").replace('&', '§').replace("{world}", args[2]));
+                Objects.requireNonNull(Bukkit.getWorld(args[2])).setTime(0);
+                sender.sendMessage(messages.getMessage("Time.Day World").replace("{world}", args[2]));
                 return true;
             } else {
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.World Not Found").replace('&', '§').replace("{worldname}", args[2]));
+                sender.sendMessage(messages.getMessage("General.World Not Found").replace("{worldname}", args[2]));
                 return false;
             }
         } else if (args[1].toLowerCase().equals("night")) {
             if (Bukkit.getWorlds().stream().anyMatch(world -> world.getName().equals(args[2]))) {
-                Bukkit.getWorld(args[2]).setTime(14000);
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("Time.Night World").replace('&', '§').replace("{world}", args[2]));
+                Objects.requireNonNull(Bukkit.getWorld(args[2])).setTime(14000);
+                sender.sendMessage(messages.getMessage("Time.Night World").replace("{world}", args[2]));
                 return true;
             } else {
-                sender.sendMessage(messages.get().getString("General.Prefix").replace('&', '§') + ' ' + messages.get().getString("General.World Not Found").replace('&', '§').replace("{worldname}", args[2]));
+                sender.sendMessage(messages.getMessage("General.World Not Found").replace("{worldname}", args[2]));
                 return false;
             }
         }

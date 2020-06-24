@@ -25,20 +25,56 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="Fixed mistype in spawn permission">
+    <list default="true" id="0f4eb709-b403-47aa-af05-be881621304c" name="Default Changelist" comment="Use getMessage method instead of getString in messages">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/muril.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Commands/Set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_md_5_bungeecord_chat_1_15_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_15_2_R0_1_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_spigotmc_spigot_api_1_15_2_R0_1_SNAPSHOT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Algorithms/AVLTree/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Algorithms/AVLTree/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Algorithms/AVLTree/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Algorithms/AVLTree/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/EZReload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/EZReload.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Gm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Gm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Invsee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Invsee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/SetSpawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/SetSpawn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/setrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Teleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Teleport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/TeleportAccept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/TeleportAccept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/TeleportRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/TeleportRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Commands/Pay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Commands/Pay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Currency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyAVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyAVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/EssentialsZR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/EssentialsZR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Files/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Files/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Files/SpawnConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Files/SpawnConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/TeleportRequestHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/TeleportRequestHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/Tree/TprNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/Tree/TprNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/Tree/TprTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/zortex/free/Holders/Tree/TprTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/EssentialsZR-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/EssentialsZR-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Algorithms/AVL_Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Algorithms/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/EZReload.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/EZReload.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Gm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Gm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Invsee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Invsee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/SetSpawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/SetSpawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Spawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Spawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Teleport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Teleport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Commands/Time.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Commands/Money.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Commands/Money.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Commands/Pay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Commands/Pay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Events/PlayerJoing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Economy/Events/PlayerJoing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/EssentialsZR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/EssentialsZR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Events/SignColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Events/SignColors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/ConfigManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/ConfigManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/SpawnConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/zortex/free/Files/SpawnConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-EssentialsZR-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-EssentialsZR-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +85,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -73,10 +110,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../Server/TestServer/plugins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,6 +126,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="me.zortex.free.Algorithms.AVLTree" />
+      <recent name="me.zortex.free.Economy.Tree" />
+    </key>
   </component>
   <component name="RunManager" selected="Remote.Debug Spigot">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -170,8 +214,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main" />
         <item itemvalue="Maven.Unnamed" />
+        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +285,27 @@
       <workItem from="1590606373737" duration="2390000" />
       <workItem from="1590615157150" duration="1561000" />
       <workItem from="1590621765411" duration="6182000" />
+      <workItem from="1590900102428" duration="70000" />
+      <workItem from="1590956124828" duration="2000" />
+      <workItem from="1590974531180" duration="197000" />
+      <workItem from="1591020872690" duration="9000" />
+      <workItem from="1591117422840" duration="9009000" />
+      <workItem from="1591140151811" duration="1895000" />
+      <workItem from="1591143371847" duration="2358000" />
+      <workItem from="1591195465471" duration="2590000" />
+      <workItem from="1591210079601" duration="1271000" />
+      <workItem from="1591223269623" duration="2152000" />
+      <workItem from="1591741271219" duration="11000" />
+      <workItem from="1591741329405" duration="21000" />
+      <workItem from="1591741564300" duration="220000" />
+      <workItem from="1591905485264" duration="5612000" />
+      <workItem from="1592309294072" duration="5000" />
+      <workItem from="1592773897307" duration="3669000" />
+      <workItem from="1592843668689" duration="6684000" />
+      <workItem from="1592872892846" duration="526000" />
+      <workItem from="1592873435069" duration="106000" />
+      <workItem from="1592873556461" duration="6804000" />
+      <workItem from="1592961942140" duration="2627000" />
     </task>
     <task id="LOCAL-00001" summary="Added Spawn Permissions">
       <created>1590607774402</created>
@@ -277,9 +342,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Spawn Permissions" />
     <MESSAGE value="Fixed mistype in spawn permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed mistype in spawn permission" />
+    <MESSAGE value="Use getMessage method instead of getString in messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use getMessage method instead of getString in messages" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1592964231791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1592964231791" />
+    <state x="552" y="161" key="#Plugins" timestamp="1592873449791">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1592873449791" />
     <state x="440" y="94" key="#Project_Structure" timestamp="1589328843287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,18 +363,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588554872578" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1589838710120">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1592773979362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589838710120" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590622676854">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592773979362" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591209538646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590622676854" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589808777197">
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591209538646" />
+    <state x="743" y="414" width="644" height="219" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591121444836">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589808777197" />
+    <state x="743" y="414" width="644" height="219" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1591121444836" />
+    <state x="756" y="427" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1591121000171">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="756" y="427" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1591121000171" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591121287945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591121287945" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591910349409">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591910349409" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1588554602513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -313,51 +399,51 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="678" y="192" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590498755479" />
-    <state width="1877" height="197" key="GridCell.Tab.0.bottom" timestamp="1590627938202">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1592859992702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590627938202" />
-    <state width="1877" height="197" key="GridCell.Tab.0.center" timestamp="1590627938202">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592859992702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1592859992702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="197" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590627938202" />
-    <state width="1877" height="197" key="GridCell.Tab.0.left" timestamp="1590627938202">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592859992702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1592859992702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="197" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590627938202" />
-    <state width="1877" height="197" key="GridCell.Tab.0.right" timestamp="1590627938202">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592859992702" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1592859992702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="197" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590627938202" />
-    <state width="1877" height="252" key="GridCell.Tab.1.bottom" timestamp="1590627868057">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592859992702" />
+    <state width="1877" height="305" key="GridCell.Tab.1.bottom" timestamp="1591911103243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="252" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590627868057" />
-    <state width="1877" height="252" key="GridCell.Tab.1.center" timestamp="1590627868056">
+    <state width="1877" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591911103243" />
+    <state width="1877" height="305" key="GridCell.Tab.1.center" timestamp="1591911103243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="252" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590627868056" />
-    <state width="1877" height="252" key="GridCell.Tab.1.left" timestamp="1590627868056">
+    <state width="1877" height="305" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591911103243" />
+    <state width="1877" height="305" key="GridCell.Tab.1.left" timestamp="1591911103243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="252" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590627868056" />
-    <state width="1877" height="252" key="GridCell.Tab.1.right" timestamp="1590627868057">
+    <state width="1877" height="305" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591911103243" />
+    <state width="1877" height="305" key="GridCell.Tab.1.right" timestamp="1591911103243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588869797953" />
-    <state width="1877" height="252" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590627868057" />
-    <state x="441" y="162" width="998" height="708" key="SettingsEditor" timestamp="1589240279473">
+    <state width="1877" height="305" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591911103243" />
+    <state x="495" y="142" width="998" height="708" key="SettingsEditor" timestamp="1592873592190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="441" y="162" width="998" height="708" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588371284802" />
-    <state x="441" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589240279473" />
+    <state x="495" y="142" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592873592190" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1590616119397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -366,14 +452,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590615235637" />
-    <state x="1038" y="265" key="extract.method.dialog" timestamp="1589808421902">
+    <state x="440" y="225" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591125398402">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1038" y="265" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589808421902" />
-    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1589768813447">
+    <state x="440" y="225" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1591125398402" />
+    <state x="1038" y="265" key="extract.method.dialog" timestamp="1592883389803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589768813447" />
+    <state x="1038" y="265" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592883389803" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1592880909884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592880909884" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1590498510618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -382,54 +472,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589808159283" />
+    <state x="752" y="378" key="scopes" timestamp="1591120517794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="378" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1591120517794" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Commands/Money.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Time.java</url>
-          <line>22</line>
-          <properties class="me.zortex.free.Commands.Time" method="onCommand">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Events/PlayerJoing.java</url>
+          <line>16</line>
+          <properties class="me.zortex.free.Economy.Events.PlayerJoing">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Teleport.java</url>
-          <line>20</line>
-          <properties class="me.zortex.free.Commands.Teleport" method="onCommand">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyAVLTree.java</url>
+          <line>59</line>
+          <properties class="me.zortex.free.Economy.Tree.EconomyAVLTree">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Spawn.java</url>
-          <line>22</line>
-          <properties class="me.zortex.free.Commands.Spawn" method="onCommand">
+          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Economy/Tree/EconomyAVLTree.java</url>
+          <line>39</line>
+          <properties class="me.zortex.free.Economy.Tree.EconomyAVLTree">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/SetSpawn.java</url>
-          <line>22</line>
-          <properties class="me.zortex.free.Commands.SetSpawn" method="onCommand">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/me/zortex/free/Commands/Weather.java</url>
-          <line>21</line>
-          <properties class="me.zortex.free.Commands.Weather" method="onCommand">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="29" />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

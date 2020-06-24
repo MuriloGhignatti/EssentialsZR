@@ -1,4 +1,4 @@
-package me.zortex.free.Algorithms;
+package me.zortex.free.Algorithms.AVLTree;
 
 public abstract class AVLTree<T>{
 

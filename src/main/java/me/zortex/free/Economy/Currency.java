@@ -1,6 +1,6 @@
 package me.zortex.free.Economy;
 
-import me.zortex.free.Algorithms.AVL_Tree;
+import me.zortex.free.Economy.Tree.EconomyAVLTree;
 import net.milkbowl.vault.economy.AbstractEconomy;
 import net.milkbowl.vault.economy.EconomyResponse;
 
@@ -8,17 +8,14 @@ import java.util.List;
 
 public class Currency extends AbstractEconomy {
 
-    private final AVL_Tree players;
-
-    //TODO Remake AVL_Tree to be more usable (Make a class to extend from, with basic AVL Operations (insert, remove, search, etc), leave specific operations for new special class
-    //TODO make the same thing for Nodes
+    private final EconomyAVLTree players;
 
     private final String economyName;
     private final String currencyNamePlural;
     private final String currencyNameSingular;
 
-    public Currency(String economyName, String currencyNamePlural, String currencyNameSingular){
-        this.players = new AVL_Tree();
+    public Currency(String economyName, String currencyNamePlural, String currencyNameSingular) {
+        this.players = new EconomyAVLTree();
         this.economyName = economyName;
         this.currencyNamePlural = currencyNamePlural;
         this.currencyNameSingular = currencyNameSingular;
@@ -86,27 +83,27 @@ public class Currency extends AbstractEconomy {
 
     @Override
     public boolean has(String playerName, String worldName, double amount) {
-        return has(playerName,amount); //TODO implement world support
+        return has(playerName, amount); //TODO implement world support
     }
 
     @Override
     public EconomyResponse withdrawPlayer(String playerName, double amount) {
-        return new EconomyResponse(amount,players.withdraw(playerName,amount), EconomyResponse.ResponseType.SUCCESS,"Something Went Wrong");
+        return new EconomyResponse(amount, players.withdraw(playerName, amount), EconomyResponse.ResponseType.SUCCESS, "Something Went Wrong");
     }
 
     @Override
     public EconomyResponse withdrawPlayer(String playerName, String worldName, double amount) {
-        return withdrawPlayer(playerName,amount);
+        return withdrawPlayer(playerName, amount);
     }
 
     @Override
     public EconomyResponse depositPlayer(String playerName, double amount) {
-        return new EconomyResponse(amount,players.deposit(playerName,amount), EconomyResponse.ResponseType.SUCCESS,"Something Went Wrong");
+        return new EconomyResponse(amount, players.deposit(playerName, amount), EconomyResponse.ResponseType.SUCCESS, "Something Went Wrong");
     }
 
     @Override
     public EconomyResponse depositPlayer(String playerName, String worldName, double amount) {
-        return depositPlayer(playerName,amount);
+        return depositPlayer(playerName, amount);
     }
 
     @Override

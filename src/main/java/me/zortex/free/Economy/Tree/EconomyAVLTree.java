@@ -1,17 +1,20 @@
-package me.zortex.free.Algorithms;
+package me.zortex.free.Economy.Tree;
 
-public class AVL_Tree extends AVL_Tree_Abstract<String>{
+import me.zortex.free.Algorithms.AVLTree.AVLTree;
+import me.zortex.free.Algorithms.AVLTree.Node;
 
-    public AVL_Tree(){
+public class EconomyAVLTree extends AVLTree<String> {
+
+    public EconomyAVLTree(){
         super();
     }
 
-    public AVL_Tree(String info){
+    public EconomyAVLTree(String info){
         super(info);
     }
 
-    public AVL_Tree(Node node){
-        setRoot(node);
+    public EconomyAVLTree(EconomyNode economyNode){
+        setRoot(economyNode);
     }
 
     @Override
@@ -30,12 +33,12 @@ public class AVL_Tree extends AVL_Tree_Abstract<String>{
     }
 
     @Override
-    public Node_Abstract<String> createNode(String info) {
-        return new Node(info);
+    public Node<String> createNode(String info) {
+        return new EconomyNode(info);
     }
 
     public double withdraw(String info, double amount){
-        Node tempRoot = (Node) getRoot();
+        EconomyNode tempRoot = (EconomyNode) getRoot();
         while (tempRoot != null) {
             if (equals(tempRoot.getInfo(),info)) {
                 return tempRoot.withdraw(amount);
@@ -43,19 +46,19 @@ public class AVL_Tree extends AVL_Tree_Abstract<String>{
                 if (tempRoot.getRight() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getRight();
+                tempRoot = (EconomyNode) tempRoot.getRight();
             } else if (greater(tempRoot.getInfo(),info)) {
                 if (tempRoot.getLeft() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getLeft();
+                tempRoot = (EconomyNode) tempRoot.getLeft();
             }
         }
         return 0;
     }
 
     public double deposit(String info, double amount){
-        Node tempRoot = (Node) getRoot();
+        EconomyNode tempRoot = (EconomyNode) getRoot();
         while (tempRoot != null) {
             if (equals(tempRoot.getInfo(),info)) {
                 return tempRoot.deposit(amount);
@@ -63,19 +66,19 @@ public class AVL_Tree extends AVL_Tree_Abstract<String>{
                 if (tempRoot.getRight() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getRight();
+                tempRoot = (EconomyNode) tempRoot.getRight();
             } else if (greater(tempRoot.getInfo(),info)) {
                 if (tempRoot.getLeft() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getLeft();
+                tempRoot = (EconomyNode) tempRoot.getLeft();
             }
         }
         return 0;
     }
 
     public double getBalance(String info){
-        Node tempRoot = (Node) getRoot();
+        EconomyNode tempRoot = (EconomyNode) getRoot();
         while (tempRoot != null) {
             if (equals(tempRoot.getInfo(),info)) {
                 return tempRoot.getBalance();
@@ -83,12 +86,12 @@ public class AVL_Tree extends AVL_Tree_Abstract<String>{
                 if (tempRoot.getRight() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getRight();
+                tempRoot = (EconomyNode) tempRoot.getRight();
             } else if (greater(tempRoot.getInfo(),info)) {
                 if (tempRoot.getLeft() == null) {
                     return 0;
                 }
-                tempRoot = (Node) tempRoot.getLeft();
+                tempRoot = (EconomyNode) tempRoot.getLeft();
             }
         }
         return 0;
